@@ -65,7 +65,7 @@
 ## Task 11 -Score
     If there is no score, there is no competition. If there is no competition, there is no fight. If there is no fight, there is no fun.
     You guessed it right, you will have to implement the score
-    When the ball get out of the screen by the right, the left player should get a point, when it get out by the left, the right player should get the       point
+    When the ball get out of the screen by the right, the left player should get a point, when it get out by the left, the right player should get the point
     For now, print on the terminal when a player score a point.
     
 ## Task 12 -
