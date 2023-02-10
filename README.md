@@ -84,5 +84,8 @@
     Add an endscreen, when a player won you should display it to make his pride grow.
     
 ## Task 15 -Restart
-    
+    When you get to your end screen you should be able to start a new game.
+    In you end screen add a button or just a key binding to restart your game.
+    Here you are your pong is finish, now you can play continually and destroy your
+    friends again and again to make the jealous of your innate talent.
 
