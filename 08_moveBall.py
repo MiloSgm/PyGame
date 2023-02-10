@@ -2,6 +2,13 @@ import pygame
 import random
 
 
+"""
+Add a move() method to the class Ball()
+This method will just move the ball depending on its horizontal speed (hspeed * speed) and its vertical speed (vspeed * speed)
+Upgrade the get_inputs() function to move the ball when you press the space key (only when the ball is not moving)
+"""
+
+
 class Pad:
     def __init__(self, x) -> None:
         self.x = x

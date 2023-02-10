@@ -2,6 +2,16 @@ import pygame
 import random
 
 
+"""
+Your ball should now move but pass through the pads and walls. Too bad, this game is no fun, let's ass collisions.
+In the move() method of your class Ball(), add the collisions.
+If the ball is about collide with the walls up and down, reverse its vspeed
+If the ball is about collide with one of the pads, reverse its hspeed
+Add the reset() method to your class Ball(), when you call it, it should stop the ball and put it back to the middle of the screen
+When the ball pass get out of the screen, call its reset() method
+"""
+
+
 class Pad:
     def __init__(self, x) -> None:
         self.x = x

@@ -2,6 +2,12 @@ import pygame
 import random
 
 
+"""
+Let's add some fun to this poor game.
+When the ball collide with a pad increase its speed, that way, the game will surely become harder?
+"""
+
+
 class Pad:
     def __init__(self, x) -> None:
         self.x = x

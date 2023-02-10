@@ -3,10 +3,14 @@ import random
 
 
 """
-Create a new function called get_inputs() that will set the k_up to True when you are pressing the up key and false when you are not
-(you can do the same for k_down)
-Now, add a new method to your Pad() class: move().
-the move() method will just move the pad depending on the variables k_up and k_down
+What would Pong be without a ball ?
+You guess it, it's now time to add a ball to your game !
+Create a class Ball() with the following variables:
+    x, y -> position
+    radius -> shape
+    speed -> movement speed (that will increases)
+    hspeed, vspeed -> vertival / horzontal speed
+-and the method draw() that will draw the ball, you can just draw a white circle
 """
 
 
