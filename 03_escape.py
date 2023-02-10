@@ -1,6 +1,12 @@
 import pygame
 
 
+"""
+Now, let's add a new event
+your game has to close when you press the escape button
+"""
+
+
 def game_loop():
 ################################################################################
     game = True

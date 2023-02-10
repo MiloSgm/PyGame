@@ -1,5 +1,14 @@
 import pygame
 
+
+"""
+you will now learn how to draw some things on the window
+First, let's draw a background
+Create a function draw_game() that will draw your all the stuff you need on your screen
+For now, just make it draw a blue rectangle on the entire screen 
+"""
+
+
 ################################################################################
 def draw_game():
     pygame.draw.rect(wn, (50, 150, 250), (0, 0, wn_width, wn_height))

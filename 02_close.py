@@ -1,6 +1,13 @@
 import pygame
 
 
+"""
+create a function game_loop() that will run your game
+you will have to handle the events in this loop
+for now just handle one events: close the game when we click on the cross
+"""
+
+
 def game_loop():
 ################################################################################
     game = True
@@ -8,9 +15,6 @@ def game_loop():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 game = False
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE:
-                    game = False
 ################################################################################
 
 

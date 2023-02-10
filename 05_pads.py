@@ -1,6 +1,19 @@
 import pygame
 
 
+"""
+Let's get started for real now and start coding the game
+create a class Pad() that will have
+-the following variables:
+    x, y -> position
+    width, height -> shape
+    speed -> movement speed
+    score -> (no comments)
+    k_up, k_down -> bool that will be usefull for the inputs
+-and the method draw() that will draw himself, you can just draw a white rectangle
+"""
+
+
 ################################################################################
 class Pad:
     def __init__(self, x) -> None:
