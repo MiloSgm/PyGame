@@ -2,6 +2,13 @@ import pygame
 import random
 
 
+"""
+Who look at the terminal playing pong ?
+Let's draw the score on the screen.
+When the ball is not moving, draw the score of each player on their side.
+"""
+
+
 class Pad:
     def __init__(self, x) -> None:
         self.x = x

@@ -2,6 +2,13 @@ import pygame
 import random
 
 
+"""
+This game is becoming more and more boring, the score is 56 to 0 but i didn't win yet ???
+You should add a win / lose system: when a player come to score 3 points, he wins.
+Add an endscreen, when a player won you should display it to make his pride grow.
+"""
+
+
 class Pad:
     def __init__(self, x) -> None:
         self.x = x
