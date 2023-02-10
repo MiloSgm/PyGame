@@ -45,6 +45,8 @@ class Ball:
 
     def move(self):
         global win
+        global p1
+        global p2
         self.x += self.hspeed * self.speed
         self.y += self.vspeed * self.speed
 
@@ -97,31 +99,45 @@ def draw_game():
     pygame.display.flip()
 
 
-def pads_input(event):
-    if event.type == pygame.KEYDOWN:
-        if event.key == pygame.K_UP:
-            p2.k_up = True
-        if event.key == pygame.K_DOWN:
-            p2.k_down = True
-        if event.key == pygame.K_z:
-            p1.k_up = True
-        if event.key == pygame.K_s:
-            p1.k_down = True
-        if (ball.hspeed == 0 and ball.vspeed == 0 and event.key == pygame.K_SPACE):
-            ball.hspeed = random.choice([-1, 1])
-            ball.vspeed = random.choice([-1, 1])
-    if event.type == pygame.KEYUP:
-        if event.key == pygame.K_UP:
-            p2.k_up = False
-        if event.key == pygame.K_DOWN:
-            p2.k_down = False
-        if event.key == pygame.K_z:
-            p1.k_up = False
-        if event.key == pygame.K_s:
-            p1.k_down = False
+def get_inputs(event):
+    global p1
+    global p2
+    global win
+    if (win == 0):
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                p2.k_up = True
+            if event.key == pygame.K_DOWN:
+                p2.k_down = True
+            if event.key == pygame.K_z:
+                p1.k_up = True
+            if event.key == pygame.K_s:
+                p1.k_down = True
+            if (ball.hspeed == 0 and ball.vspeed == 0 and event.key == pygame.K_SPACE):
+                ball.hspeed = random.choice([-1, 1])
+                ball.vspeed = random.choice([-1, 1])
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_UP:
+                p2.k_up = False
+            if event.key == pygame.K_DOWN:
+                p2.k_down = False
+            if event.key == pygame.K_z:
+                p1.k_up = False
+            if event.key == pygame.K_s:
+                p1.k_down = False
+    elif event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_SPACE:
+            win = 0
+            p1.y = wn_height / 2
+            p2.y = wn_height / 2
+            p1.score = 0
+            p2.score = 0
+            print("restart")
+    
 
 
 def game_loop():
+    global win
     game = True
     while game:
         for event in pygame.event.get():
@@ -130,8 +146,7 @@ def game_loop():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     game = False
-            if (win == 0):
-                pads_input(event)
+            get_inputs(event)
         if (win == 0):
             p1.move()
             p2.move()

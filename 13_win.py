@@ -131,10 +131,7 @@ def game_loop():
                 if event.key == pygame.K_ESCAPE:
                     game = False
             if (win == 0):
-                pads_input(event)
-            elif event.key == pygame.K_SPACE:
-                win = 0
-                
+                pads_input(event)    
         if (win == 0):
             p1.move()
             p2.move()
