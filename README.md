@@ -2,6 +2,8 @@
 
 ## Task 00 -Instalation
     The very first step is to import the pygame lib in your .py file  and to install it (don't forget to give the rights to your .py file (chmod +x)).
+    
+    pip install pygame
 
 ## Task 01 -Create a window:
     The very first step is to import the pygame lib in your .py file and to install it (don't forget to give the rights to your .py file (chmod +x)). 
