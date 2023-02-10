@@ -2,6 +2,13 @@ import pygame
 import random
 
 
+"""
+When you get to your end screen you should be able to start a new game.
+In you end screen add a button or just a key binding to restart your game.
+Here you are your pong is finish, now you can play continually and destroy your friends again and again to make the jealous of your innate talent.
+"""
+
+
 class Pad:
     def __init__(self, x) -> None:
         self.x = x
